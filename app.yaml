@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: github-actions-demo
+  namespace: argocd
+
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/muthurajaji2/github-actions-demo.git
+    targetRevision: HEAD
+    path: github-actions-demo-chart
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
