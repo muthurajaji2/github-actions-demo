@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: github-actions-demo
-        image: muthurajaji2/github-actions-demo:latest
+        image: muthurajaji2/github-actions-demo:v3
         imagePullPolicy: Always
 
         ports:
