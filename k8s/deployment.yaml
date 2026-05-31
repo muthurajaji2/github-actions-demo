@@ -20,7 +20,7 @@ spec:
       containers:
       - name: github-actions-demo
 
-        image: muthurajaji2/github-actions-demo:v1
+        image: muthurajaji2/github-actions-demo:v2
 
         ports:
         - containerPort: 80
