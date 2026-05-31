@@ -21,6 +21,8 @@ spec:
       - name: github-actions-demo
 
         image: muthurajaji2/github-actions-demo:v2
+        imagePullSecrets:
+        - name: dockerhub-secret
 
         ports:
         - containerPort: 80
